@@ -11,7 +11,8 @@
     "build": "tsc",
     "pretest": "npm run build",
     "test": "mocha output/tests",
-    "prepublishOnly": "npm run test"
+    "prepublishOnly": "npm run test",
+    "browser": "npx budo output/scripts/browser.js -S -C ssl/example.crt -K ssl/example.key"
   },
   "dependencies": {
     "ledgerco": "1.1.3",
